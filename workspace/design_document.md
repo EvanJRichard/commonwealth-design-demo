@@ -9,7 +9,7 @@ Existing DAO governance systems require explicit developer involvement, limiting
 ## Proposed Solution
 The proposed solution is to create a set of classes and methods that enable DAO members to create actions, attach hooks, and execute workflows within the DAO. The core classes include `DAO`, `Action`, and `Hook`, with specific subclasses for different types of hooks. The system will also include a `CommunityRewardAllocation` class for allocating rewards based on user contributions.
 
-** Bottom Line Up Front ** : It sounds like we want "IFTTT" for DAOs. So, basically rip IFTTT's front end and use it to do a UniswapV4-like thing in the back end, where arbitrary smart contracts can be supplied as pre- and post-action hooks.
+***Bottom Line Up Front*** : It sounds like we want "IFTTT" for DAOs. So, basically rip IFTTT's front end and use it to do a UniswapV4-like thing in the back end, where arbitrary smart contracts can be supplied as pre- and post-action hooks.
 
 ## Trade-offs
 The design of the system involves several trade-offs:
