@@ -1,0 +1,54 @@
+We are seeking an engineer to delve into a complex challenge that involves
+creating a more flexible and inclusive governance system for Decentralized
+Autonomous Organizations (DAOs). The goal is to develop an extensible interface
+that allows DAO members, not just developers, to define and automate workflows
+within their community. This includes defining hooks that are executed before
+and after certain actions, safely using DeFi apps without risking the DAO's
+treasury, and allocating rewards to funders of a crowdfund, among other
+potential use cases.
+
+Our inspiration comes from the extensibility of hooks in Uniswap V4, Balancer,
+and Gnosis Safe and some of their additional modules. However, these systems
+require explicit developer involvement, limiting the library of available hooks
+due to the technical nature of DAO users. We're also inspired by how proposal
+systems work, pushing call data on chain to execute, potentially providing a
+low-code pattern.
+
+Your task as the candidate is to design a solution that may be able to solve the
+trilemma--trustlessness, extensibility, ease of use / level of coding. There is
+no perfect solution, therefore we're looking for a more research-oriented
+approach to outline some potential solutions.
+
+To guide your work, consider the following case examples:
+
+- **Case 1: Token Transfer with Custom Hooks**: A user wants to transfer tokens
+  but the action is gated by a custom hook. The hook checks if the user's
+  balance is greater than a certain value. If the condition is not met, the
+  token transfer action is not executed.
+- **Case 2: Dynamic Parameter Execution**: A community admin wants to mint new
+  tokens for active users. An action is created with a dynamic hook that checks
+  the activity level of a user. If the user's activity level meets the required
+  threshold, the minting action is executed.
+- **Case 3: Off-chain Data Verification**: A user wants to claim rewards based
+  on off-chain activity.
+- **Case 4: Complex DeFi Workflow**: A user wants to borrow assets on a DeFi
+  platform. The borrowing action is controlled by a chain of hooks that check
+  various conditions such as collateral amount, collateralization ratio, borrow
+  limit, and current asset price from an off-chain oracle.
+- **Case 5: Community Reward Allocation**: A user posts frequently in a
+  community (e.g., Farcaster) and wants to claim rewards based on their
+  contributions.
+
+Your deliverable should be a design document that details:
+
+1. The trade-offs associated with your solution, considering factors such as
+   extensibility, ease of use, and trustlessness.
+2. How each of the above cases would or would not work in this system.
+3. Sources for research
+4. Can the code be built using GPT?
+
+As a bonus deliverable, produce wireframes or a simple mockup describing your
+design.
+
+We're excited to see how you will leverage these ideas and your engineering
+skills to build a more inclusive and flexible DAO governance system.
